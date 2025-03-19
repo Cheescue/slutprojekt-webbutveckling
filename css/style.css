@@ -3,6 +3,15 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color:#d1d1d1
+}
+
+nav ul li a:hover {
+    background-color: #555; 
+    color: #ffd700; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 .container {
@@ -29,6 +38,17 @@ header {
     margin: 0;
     font-size: 24px;
 }
+
+#logo h1 a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#logo h1 a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
 
 nav {
     margin-right: auto;
@@ -67,7 +87,7 @@ nav ul li a {
 }
 
 .box {
-    background-color:#c9c8c8;
+    background-color: white;
     padding: 15px;
     text-align: center;
     font-size: 18px;
@@ -94,10 +114,10 @@ nav ul li a {
     text-align: left;
 }
 
-/* Expanded animation I think*/
+/* Expanded animation */
 .box.expanded {
     padding: 20px;
-    background-color: #d9d9d9;
+    background-color: rgb(232, 232, 232)
 }
 
 .box.expanded .box-content {
