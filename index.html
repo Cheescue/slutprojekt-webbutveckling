@@ -6,11 +6,15 @@
     <link rel="stylesheet" href="css/style.css">
     <title>trafikskola</title>
 </head>
+
+
 <body>
     <div class="container">
         <!-- Header with navigation and title -->
         <header id="header">
-            <nav id="nav">
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        
+            <nav id="mobileMenu" class="mobile-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="courses.html">Courses</a></li>
@@ -18,13 +22,14 @@
                     <li><a href="review.html">Review</a></li>
                 </ul>
             </nav>
+        
             <div id="logo">
                 <h1><a href="index.html">Trafikskola</a></h1>
             </div>
         </header>
 
         <section id="image-section">
-            <img src="img/volvo.png" alt="Traffic School" />
+            <img src="img/realvolvo.webp" alt="image of one of our training vehicles, a volvo.">
         </section>
 
         <article id="article">
@@ -35,6 +40,7 @@
         <footer id="footer">
             <p>&copy; 2025 Trafikskola. All rights reserved. Tel: 070-215 44 39</p>
         </footer>
+        <script src="js/kevin.js"></script>
     </div>
 </body>
 </html>

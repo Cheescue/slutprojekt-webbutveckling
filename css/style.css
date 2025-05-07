@@ -25,7 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #333;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px 15px;
 }
 
@@ -59,7 +59,9 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-direction: column; /* Stack items vertically */
 }
+
 
 nav ul li {
     margin-right: 15px;
@@ -236,7 +238,7 @@ footer {
 
 .team-member p {
     margin: 5px 0;
-    color: #666;
+    color: #404040;
     font-size: 16px;
 }
 
@@ -284,4 +286,58 @@ footer {
     .review-grid {
         grid-template-columns: 1fr;
     }
+}
+
+
+/* Hamburgermeny-stil */
+.hamburger {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    z-index: 1001;
+    padding: 10px;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -60%;  /* Initialt utanför skärmen */
+    width: 60%;
+    height: 100%;
+    background-color: #333;
+    z-index: 1000;
+    transition: left 0.3s ease;  /* Lägger till en smidig övergång */
+    padding-top: 60px;
+    overflow-y: auto;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.mobile-menu ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #444;
+}
+
+.mobile-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mobile-menu.active {
+    left: 0%;  /* När menyn är aktiv, skjuts den in på skärmen */
+}
+
+.mobile-menu ul li a:hover {
+    background-color: #555;
+    color: #ffd700;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
