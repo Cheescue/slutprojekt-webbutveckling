@@ -6,6 +6,8 @@ body, html {
     background-color:#d1d1d1
 }
 
+
+
 nav ul li a:hover {
     background-color: #555; 
     color: #ffd700; 
@@ -118,9 +120,15 @@ nav ul li a {
 .box.expanded {
     padding: 20px;
     background-color: rgb(232, 232, 232)
+    
 }
 
+
 .box.expanded .box-content {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
     display: block;
 }
 
@@ -142,6 +150,10 @@ nav ul li a {
 article {
     padding: 20px;
     background-color: #f4f4f4;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 /* Footer Section */
